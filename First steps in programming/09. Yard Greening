@@ -2,15 +2,17 @@ package FirstStepsInCoding;
 
 import java.util.Scanner;
 
-public class PetShop08 {
+public class YardGreening09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double dogFoodQuantity = Double.parseDouble(scanner.nextLine());
-        double catFoodQuantity = Double.parseDouble(scanner.nextLine());
-        double singleDogFoodPrice = 2.50;
-        double singleCatFoodPrice = 4;
-        double totalPrice =  dogFoodQuantity * singleDogFoodPrice  + catFoodQuantity * singleCatFoodPrice;
-        System.out.println(totalPrice);
+        double squareMetersForGreening = Double.parseDouble(scanner.nextLine());
+        //The price for 1 square meter of greening is 7.61$. We also have 18% discount of the total price
+        double totalSumForGreening = squareMetersForGreening * 7.61;
+        double theDiscountPrice = totalSumForGreening * 0.18;
+        double totalSumWithDiscountOf18Percent = totalSumForGreening - theDiscountPrice;
+        System.out.println("The final price is: " + totalSumWithDiscountOf18Percent);
+        System.out.println("The discount is: " + theDiscountPrice);
     }
 }
+
