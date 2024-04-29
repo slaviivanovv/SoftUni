@@ -1,0 +1,18 @@
+package FirstStepsInCoding;
+
+import java.util.Scanner;
+
+public class ProjectCreation07 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //The architect Slavi will need 9 hours to complete 3 project/s.
+        String name = scanner.nextLine();
+        int numberOfProjects = Integer.parseInt(scanner.nextLine());
+        int singleProject = 3;
+        int totalHoursToCompleteProject = singleProject * numberOfProjects;
+
+        System.out.println("The architect " + name + " will need " + totalHoursToCompleteProject + " hours to complete " + numberOfProjects + " project/s.");
+
+    }
+}
